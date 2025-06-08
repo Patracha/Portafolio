@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Franco Muñoz | Portafolio Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8f7f4; /* Un tono beige muy claro */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hero-bg {
+            background-image: url('https://placehold.co/1920x1080/333333/FFFFFF?text=Experiencia+en+Marketing+y+Diseño');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-hover-effect {
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+        .card-hover-effect:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Franco Muñoz</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-amber-700 transition">Sobre Mí</a>
+                <a href="#portfolio" class="text-gray-600 hover:text-amber-700 transition">Portafolio</a>
+                <a href="#skills" class="text-gray-600 hover:text-amber-700 transition">Habilidades</a>
+                <a href="#contact" class="text-gray-600 hover:text-amber-700 transition">Contacto</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-amber-700 transition">Sobre Mí</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-amber-700 transition">Portafolio</a>
+            <a href="#skills" class="block py-2 text-gray-600 hover:text-amber-700 transition">Habilidades</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-amber-700 transition">Contacto</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white pt-32 pb-20 md:pt-48 md:pb-32">
+        <div class="container mx-auto px-6 text-center bg-black bg-opacity-50 py-10 rounded-lg">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4">Franco Muñoz</h1>
+            <p class="text-lg md:text-2xl text-gray-200">Especialista en Marketing y Desarrollo de Negocios Turísticos</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="md:flex md:items-center">
+                <div class="md:w-1/3 text-center mb-8 md:mb-0">
+                    <img src="https://placehold.co/300x300/a89a87/FFFFFF?text=Franco+M." alt="Retrato de Franco Muñoz" class="rounded-full mx-auto shadow-lg w-48 h-48 md:w-64 md:h-64 object-cover">
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Sobre Mí</h2>
+                    <p class="mb-4 text-gray-600 leading-relaxed">Profesional apasionado por la hotelería y el turismo, con una sólida trayectoria en la creación de estrategias de marketing y materiales de comunicación para potenciar negocios. Mi enfoque se centra en la innovación y el diseño de experiencias, transformando conceptos en realidades exitosas y memorables.</p>
+                    <p class="mb-4 text-gray-600 leading-relaxed">Con una visión estratégica, he desarrollado el branding y la comunicación para el Hotel Boutique "La Calma de Rita", contribuyendo a su crecimiento y posicionamiento como un destino de referencia en el Valle del Maipo. Mi experiencia abarca desde la creación de propuestas comerciales y pitch decks hasta el diseño de eventos personalizados y la elaboración de toda la suite de marketing digital y físico.</p>
+                    <a href="#contact" class="inline-block bg-amber-700 text-white font-bold py-3 px-6 rounded-lg hover:bg-amber-800 transition shadow-md">Contáctame</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Portafolio de Proyectos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Project 1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/8d7c6e/FFFFFF?text=Eventos+Corporativos" alt="Imagen del proyecto 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Creación de Propuestas Comerciales</h3>
+                        <p class="text-gray-600 text-base">Diseño de propuestas visuales y de contenido para el segmento empresarial, creando experiencias personalizadas para jornadas de team building, lanzamientos y reuniones estratégicas, como las desarrolladas para "La Calma de Rita".</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/c7b299/FFFFFF?text=Marketing+para+Bodas" alt="Imagen del proyecto 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Desarrollo de Material de Marketing</h3>
+                        <p class="text-gray-600 text-base">Creación de brochures, presentaciones y paquetes de bodas (Bronce, Plata, Oro) adaptados a diversos estilos, incluyendo celebraciones multiculturales, para posicionar a clientes como destinos de primer nivel.</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/5b7b7a/FFFFFF?text=Desarrollo+de+Negocios" alt="Imagen del proyecto 3" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Pitch Decks y Alianzas Estratégicas</h3>
+                        <p class="text-gray-600 text-base">Elaboración de presentaciones de negocios (pitch decks) y estrategias para la captación de inversiones y socios. Diseño de convenios con tour operadores para expandir el alcance del mercado de mis clientes.</p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/a38974/FFFFFF?text=Diseño+de+Experiencias" alt="Imagen del proyecto 4" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Diseño de Experiencia del Cliente (CX)</h3>
+                        <p class="text-gray-600 text-base">Creación y diseño de la presentación de productos y servicios enfocados en el cliente, como menús temáticos, programas de escapadas y programas de fidelización para mejorar la retención y satisfacción del huésped.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/9b8b7a/FFFFFF?text=Branding+y+Comunicación" alt="Imagen del proyecto 5" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Branding y Comunicación Visual</h3>
+                        <p class="text-gray-600 text-base">Creación de la identidad de marca a través de todo el material de comunicación: presentaciones, menús, contratos y folletos. Aseguramiento de una voz y estética de marca consistente y atractiva.</p>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden card-hover-effect">
+                    <img src="https://placehold.co/600x400/6f6259/FFFFFF?text=Enoturismo" alt="Imagen del proyecto 6" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-3">Conceptualización de Productos Turísticos</h3>
+                        <p class="text-gray-600 text-base">Conceptualización de experiencias enoturísticas únicas, integrando catas, visitas a viñas y gastronomía para dar forma a un producto turístico completo, diferenciado y listo para ser comercializado.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">Habilidades Clave</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 text-center">
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="megaphone" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Marketing Estratégico</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="layout-template" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Diseño Gráfico Publicitario</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="briefcase" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Desarrollo de Negocios</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="gem" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Diseño de Experiencias</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="handshake" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Alianzas Estratégicas</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                     <i data-lucide="grape" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Marketing Enoturístico</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="palette" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Branding y Comunicación</h3>
+                </div>
+                <div class="bg-amber-50 p-6 rounded-lg shadow-sm">
+                    <i data-lucide="lightbulb" class="w-12 h-12 mx-auto text-amber-700 mb-2"></i>
+                    <h3 class="font-semibold">Conceptualización de Productos</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Hablemos</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">Estoy abierto a nuevas oportunidades y colaboraciones. Si mi perfil se alinea con sus necesidades, no dude en contactarme.</p>
+            <div class="flex justify-center items-center space-x-6 text-lg">
+                <a href="mailto:franco.munoz.profesional@email.com" class="flex items-center text-gray-700 hover:text-amber-700 transition">
+                    <i data-lucide="mail" class="w-6 h-6 mr-2"></i>
+                    <span>franco.munoz.profesional@email.com</span>
+                </a>
+                <span class="text-gray-300">|</span>
+                <a href="tel:+56987654321" class="flex items-center text-gray-700 hover:text-amber-700 transition">
+                     <i data-lucide="phone" class="w-6 h-6 mr-2"></i>
+                    <span>+56 9 8765 4321</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Franco Muñoz. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when a link is clicked
+        const mobileMenuLinks = document.querySelectorAll('#mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
